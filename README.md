@@ -1,6 +1,6 @@
 ## currency-data
 
-Currency data is an npm package for exposing information about the world's currencies and their usage. It's core value lies in `./data.json` and it exposes a number of utility methods for interacting with it's content, however, requiring that data yourself is of course possibl and encouraged. You can do so thusly:
+Currency data is an npm package for exposing information about the world's currencies and their usage. It's core value lies in `./data.json` and it exposes a number of utility methods for interacting with it's content, however, requiring that data yourself is of course possible (and encouraged). You can do so thusly:
 
 ```javascript
 const rawCurrencyData = require('./node_modules/currency-data/data'); 
