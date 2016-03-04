@@ -8,7 +8,7 @@ const rawCurrencyData = require('./node_modules/currency-data/data');
 
 There are a number of other NPM modules that have similar functionality, but most of them have incomplete data (e.g. only returning *one* currency that uses the '£' symbol?! There are dozens!). As a result this module attempts to offer a *complete and comprehensive* set of data about the worlds currencies.
 
-Need information about the currency used in the Nagorno-Karabakh Republic? This is the module for you and the answer is it uses two currencies: the Nagorno-Karabakh Dram and the Armenian Dram!
+Need information about the currency used in the Nagorno-Karabakh Republic? This is the module for you! The answer is it uses two currencies: the Nagorno-Karabakh Dram and the Armenian Dram!
 
 ## Usage
 
