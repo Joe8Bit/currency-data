@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "coverage": "./node_modules/nyc/bin/nyc.js --reporter=html npm test"
+    "local-coverage": "./node_modules/nyc/bin/nyc.js --reporter=html npm test",
+    "ci-coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
