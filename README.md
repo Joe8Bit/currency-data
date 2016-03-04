@@ -1,5 +1,12 @@
 ## currency-data
 
+[![Circle CI](https://circleci.com/gh/Joe8Bit/currency-data.svg?style=svg)](https://circleci.com/gh/Joe8Bit/currency-data)
+
+[![Coverage Status](https://coveralls.io/repos/github/Joe8Bit/currency-data/badge.svg?branch=master)](https://coveralls.io/github/Joe8Bit/currency-data?branch=master)
+[![Dependency status](https://david-dm.org/joe8bit/currency-data.svg)](https://david-dm.org/Joe8bit/currency-data)
+[![Dependency status](https://david-dm.org/Joe8bit/currency-data/dev-status.svg)](https://david-dm.org/Joe8bit/currency-data#info=devDependencies&view=table)
+[![npm version](https://badge.fury.io/js/currency-data.svg)](https://badge.fury.io/js/currency-data)
+
 Currency data is an npm package for exposing information about the world's currencies and their usage. It's core value lies in `./data.json` and it exposes a number of utility methods for interacting with it's content, however, requiring that data yourself is of course possible (and encouraged). You can do so thusly:
 
 ```javascript
