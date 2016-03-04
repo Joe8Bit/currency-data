@@ -1,0 +1,32 @@
+{
+  "name": "currency-data",
+  "version": "1.0.0",
+  "description": "A module that exposes data on the worlds currencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "coverage": "./node_modules/nyc/bin/nyc.js --reporter=html npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joe8Bit/currency-data.git"
+  },
+  "keywords": [
+    "currency",
+    "data",
+    "currencies"
+  ],
+  "author": "Joe Pettersson <joe8bit@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joe8Bit/currency-data/issues"
+  },
+  "homepage": "https://github.com/Joe8Bit/currency-data#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "nyc": "^6.0.0"
+  }
+}
