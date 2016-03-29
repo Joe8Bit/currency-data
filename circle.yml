@@ -4,5 +4,6 @@ machine:
 test:
   pre:
     - npm install -g coveralls
+    - npm install -g snyk
   override:
-    - npm run ci-coverage
+    - npm run ci-coverage && snyk test
