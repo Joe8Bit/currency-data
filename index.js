@@ -3,53 +3,53 @@
 const _ = require('lodash');
 const data = require('./data');
 
-exports.getData = () => {
+exports.getData = function () {
   return data;
 };
 
-exports.getCurrencyByCountryISOCode = (ISOCode) => {
+exports.getCurrencyByCountryISOCode = function (ISOCode) {
   return _.find(data, { countryISOCode: ISOCode });
 };
 
-exports.getCountriesByCurrencyISOCode = (ISOCode) => {
-  return _.filter(data, (curr) => {
+exports.getCountriesByCurrencyISOCode = function (ISOCode) {
+  return _.filter(data, function (curr) {
     return curr.currency.isoCode === ISOCode;
   });
 };
 
-exports.getCurrencyByCurrencyISOCode = (ISOCode) => {
-  return _.find(data, (curr) => {
+exports.getCurrencyByCurrencyISOCode = function (ISOCode) {
+  return _.find(data, function (curr) {
     return curr.currency.isoCode === ISOCode;
   }).currency;
 };
 
-exports.getCurrenciesBySymbol = (symbol) => {
-  return _.filter(data, (curr) => {
+exports.getCurrenciesBySymbol = function (symbol) {
+  return _.filter(data, function (curr) {
     return curr.currency.symbol === symbol;
   });
 };
 
-exports.getCurrencyByName = (name) => {
-  return _.find(data, (curr) => {
+exports.getCurrencyByName = function (name) {
+  return _.find(data, function (curr) {
     return curr.currency.name.toLowerCase() === name.toLowerCase();
   }).currency;
 };
 
-exports.getCurrenciesByFractionalUnit = (fractionalUnit) => {
-  return _.filter(data, (curr) => {
+exports.getCurrenciesByFractionalUnit = function (fractionalUnit) {
+  return _.filter(data, function (curr) {
     return curr.currency.fractionalUnit.name === fractionalUnit;
   });
 };
 
-exports.getCurrenciesByFractionalUnitNumberToBasic = (numberToBasic) => {
-  return _.filter(data, (curr) => {
+exports.getCurrenciesByFractionalUnitNumberToBasic = function (numberToBasic) {
+  return _.filter(data, function (curr) {
     return curr.currency.fractionalUnit.numberToBasic === numberToBasic;
   });
 };
 
-exports.getCurrencyISOCodes = () => {
+exports.getCurrencyISOCodes = function () {
   return _.chain(data)
-            .map((curr) => {
+            .map(function (curr) {
               return curr.currency.isoCode;
             })
             .uniq()
@@ -59,9 +59,9 @@ exports.getCurrencyISOCodes = () => {
             .value();
 };
 
-exports.getCurrencyNames = () => {
+exports.getCurrencyNames = function () {
   return _.chain(data)
-            .map((curr) => {
+            .map(function (curr) {
               return curr.currency.name;
             })
             .uniq()
@@ -72,9 +72,9 @@ exports.getCurrencyNames = () => {
             .value();
 };
 
-exports.getCountryISOCodes = () => {
+exports.getCountryISOCodes = function () {
   return _.chain(data)
-            .map((curr) => {
+            .map(function (curr) {
               return curr.countryISOCode;
             })
             .uniq()
@@ -84,9 +84,9 @@ exports.getCountryISOCodes = () => {
             .value();
 };
 
-exports.getCountryNames = () => {
+exports.getCountryNames = function () {
   return _.chain(data)
-            .map((curr) => {
+            .map(function (curr) {
               return curr.countryName;
             })
             .uniq()
